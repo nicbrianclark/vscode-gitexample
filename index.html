@@ -5,49 +5,43 @@
     <title>Document</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 14px;
             margin: 0;
-            padding: 0;
         }
-        main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            margin: 0;
         }
-        div[class*='container-'] {
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.6)), url(./coolguy.jpeg);
+            background-size: cover;
+            background-position: center;
+            min-height: 50vh;
             display: flex;
-            justify-content: center;
-            gap: 1rem;
-            background-color: lightblue;
-            width: 100%;
-            min-height: 150px;
+            align-items: flex-end;
+            padding: 1rem;
         }
 
-        @media screen and (min-width: 400px) {
-            main {
-                flex-wrap: nowrap;
-            }
+        .title {
+            color: white;
         }
     </style>
 </head>
 <body>
     <main>
-        <div class="container-1">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-        </div>
-        <div class="container-2">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-        </div>
-        <div class="container-3">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-        </div>
+        <section class="hero">
+            <div class="title">
+                <h1>Doodie McDuderson</h1>
+                <p>The dudiest dude who ever duded.</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>
